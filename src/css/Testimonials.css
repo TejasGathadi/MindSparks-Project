@@ -1,0 +1,83 @@
+/* src/css/Testimonials.css */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.testimonial-swiper {
+    width: 100%;
+    max-width: 1200px;
+    /* Adjust the max-width as needed */
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    height: 400px;
+    /* Ensure all cards have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.testimonial-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-image:hover {
+    transform: scale(1.1);
+    /* Remove translateZ(20px) to avoid the white circle effect */
+    box-shadow: none;
+    /* Remove the box-shadow for no effect */
+}
+
+.testimonial-name {
+    margin-bottom: 10px;
+    color: #4CAF50;
+    font-size: 1.5rem;
+    /* Increased font size */
+}
+
+.testimonial-text {
+    color: #333;
+    font-size: 1.25rem;
+    /* Increased font size */
+    flex-grow: 1;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff !important;
+}

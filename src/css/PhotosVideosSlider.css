@@ -1,0 +1,31 @@
+.gallery-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff !important;
+}

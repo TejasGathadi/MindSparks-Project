@@ -1,0 +1,51 @@
+/* Navbar Background */
+.custom-navbar {
+    background-color: #ff963f !important;
+    /* Orange */
+}
+
+/* Navbar Links & Hover Effect */
+.custom-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-hover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: black;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.custom-hover:hover {
+    color: black;
+}
+
+.custom-hover:hover::after {
+    width: 100%;
+    /* Ensures the underline matches text width */
+    left: 0;
+}
+
+/* Logo Styling */
+.logo-img {
+    height: 100px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 8px;
+    /* Space between logo and text */
+}
+
+/* Ensure the navbar brand is aligned properly */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
