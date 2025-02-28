@@ -24,10 +24,10 @@ export default function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_360hfas", // Your EmailJS Service ID
-        "template_fbzs0v7", // Your EmailJS Template ID
+        "service_l2sb7n6", // Your EmailJS Service ID
+        "template_9hy40c6", // Your EmailJS Template ID
         e.target,
-        "7clMQRY3RF5PhowUz" // Your EmailJS Public Key
+        "B8_kV_-GnbLGy1nSU" // Your EmailJS Public Key
       )
       .then(
         (result) => {
@@ -45,7 +45,9 @@ export default function ContactUs() {
   return (
     <div className="contact-us-block">
       <div className="contact-us-intro">
-        <p>For more details, contact us</p>
+        <p>
+          <b>FOR FREE DEMO</b>
+        </p>
         <button className="contact-us-button" onClick={openPopup}>
           Contact Us
         </button>

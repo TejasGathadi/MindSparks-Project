@@ -10,7 +10,7 @@ import logo from "../images/mindsparklogo.png";
 export default function Footer() {
   return (
     <>
-      <footer className="footer text-light">
+      <footer className="footer text-light mt-5">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -27,6 +27,8 @@ export default function Footer() {
                     <a
                       href="https://wa.me/9356214544"
                       className="contact-link mt-4"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={whatsappIcon} alt="WhatsApp" />
                       <span>WhatsApp</span>
@@ -36,18 +38,22 @@ export default function Footer() {
                 <div className="col-md-4">
                   <div className="contact-group mt-3">
                     <a
-                      // href="https://instagram.com/yourprofile"
+                      href="https://www.instagram.com/mindspark_edutech"
                       className="contact-link"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={instagramIcon} alt="Instagram" />
                       <span>Instagram</span>
                     </a>
                     <a
-                      // href="mailto:info@example.com"
+                      href="mailto:outreach@mindsparkedutech.com"
                       className="contact-link mt-4"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={emailIcon} alt="Email" />
-                      <span>info@example.com</span>
+                      <span>outreach@mindsparkedutech.com</span>
                     </a>
                   </div>
                 </div>
@@ -56,6 +62,8 @@ export default function Footer() {
                     <a
                       // href="https://facebook.com/yourprofile"
                       className="contact-link"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={facebookIcon} alt="Facebook" />
                       <span>Facebook</span>
@@ -74,7 +82,7 @@ export default function Footer() {
                 </p>
                 <div className="map-container">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507274!2d-122.08424968468366!3d37.42200414517917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857d5d8f65a8f7%3A0x500ef6143a38d10!2sGoogleplex!5e0!3m2!1sen!2sus!4v1634547375678!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30267.347337538657!2d73.7789191743164!3d18.509984700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb054367e1f%3A0xc5984eb97914d4b2!2sIdeal%20Square%2C%20Nav-Swaraj%20co-op%20HSG%20SOC!5e0!3m2!1sen!2sin!4v1740672985910!5m2!1sen!2sin"
                     width="75%"
                     height="100"
                     style={{ border: 0 }}

@@ -3,21 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "../css/MediaCarousel.css"; // Custom CSS for styling
+import "../css/DemoCss.css"; // Custom CSS for styling
 
 const mediaItems = [
-  { id: 1, type: "image", src: "/images/photo1.jpg" },
-  { id: 2, type: "image", src: "/images/photo2.jpg" },
-  { id: 3, type: "video", src: "/videos/video1.mp4" },
-  { id: 4, type: "image", src: "/images/photo3.jpg" },
-  { id: 5, type: "video", src: "/videos/video2.mp4" },
-  { id: 6, type: "image", src: "/images/photo4.jpg" },
+  { id: 1, type: "image", src: "/demoImages/img1.jpg" },
+  { id: 2, type: "image", src: "/demoImages/img2.jpg" },
+  { id: 3, type: "video", src: "/demoImages/video1.mp4" },
+  { id: 4, type: "image", src: "/demoImages/img3.jpg" },
+  { id: 5, type: "image", src: "/demoImages/img4.jpg" },
+  { id: 6, type: "image", src: "/demoImages/img5.jpg" },
+  { id: 7, type: "image", src: "/demoImages/img6.jpg" },
 ];
 
-export default function MediaCarousel() {
+export default function DemoComponent() {
   return (
     <div className="container mt-4">
-      <h2 className="text-center mb-4">Gallery</h2>
+      <h2 className="text-center mb-4">LIVE DEMO</h2>
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -40,7 +41,14 @@ export default function MediaCarousel() {
                   className="img-fluid rounded"
                 />
               ) : (
-                <video controls className="img-fluid rounded">
+                <video
+                  className="img-fluid rounded"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

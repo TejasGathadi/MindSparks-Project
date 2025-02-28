@@ -2,8 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import Features from "./Features";
 import PhotosVideosSlider from "./PhotosVideosSlider";
-import Testimonials from "./Testimonials";
 import Footer from "./Footer";
+import DemoComponent from "./DemoComponent";
 
 export default function LandingPage() {
   return (
@@ -11,7 +11,7 @@ export default function LandingPage() {
       <Hero />
       <Features />
       <PhotosVideosSlider />
-      <Testimonials />
+      <DemoComponent />
       <Footer />
     </>
   );
